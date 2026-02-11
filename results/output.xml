@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-02-11T11:37:32.831446" rpa="false" schemaversion="5">
+<suite id="s1" name="Software-Testing- Quiz02" source="C:\Users\Msi\Documents\Software-Testing-_Quiz02">
+<suite id="s1-s1" name="testRF02" source="C:\Users\Msi\Documents\Software-Testing-_Quiz02\testRF02.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-11T11:37:33.084342" level="INFO">Opening browser 'chrome' to base url 'https://reg.up.ac.th/'.</msg>
+<arg>https://reg.up.ac.th/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-11T11:37:33.083720" elapsed="5.377533"/>
+</kw>
+<test id="s1-s1-t1" name="Login with Standard User" line="22">
+<kw name="Click Login Button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T11:37:38.468824" level="INFO">Clicking element 'xpath=/html/body/header/div[1]/div[2]/div[3]/div/button'.</msg>
+<arg>xpath=/html/body/header/div[1]/div[2]/div[3]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-11T11:37:38.468387" elapsed="0.101043"/>
+</kw>
+<status status="PASS" start="2026-02-11T11:37:38.467915" elapsed="0.102426"/>
+</kw>
+<kw name="Input UserName">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-11T11:37:38.572544" level="INFO">Typing text 'standard_user' into text field '//*[@id="user-name"]'.</msg>
+<msg time="2026-02-11T11:37:38.822656" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-11T11:37:38.823138" level="FAIL">Element with locator '//*[@id="user-name"]' not found.</msg>
+<arg>//*[@id="user-name"]</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-11T11:37:38.572032" elapsed="0.264501">Element with locator '//*[@id="user-name"]' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-11T11:37:38.571256" elapsed="0.265624">Element with locator '//*[@id="user-name"]' not found.</status>
+</kw>
+<kw name="Input Password">
+<status status="NOT RUN" start="2026-02-11T11:37:38.837324" elapsed="0.000235"/>
+</kw>
+<status status="FAIL" start="2026-02-11T11:37:38.461607" elapsed="0.376324">Element with locator '//*[@id="user-name"]' not found.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-11T11:37:38.857628" elapsed="2.209910"/>
+</kw>
+<status status="FAIL" start="2026-02-11T11:37:32.874856" elapsed="8.192851"/>
+</suite>
+<status status="FAIL" start="2026-02-11T11:37:32.837649" elapsed="8.233856"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Software-Testing- Quiz02" id="s1" pass="0" fail="1" skip="0">Software-Testing- Quiz02</stat>
+<stat name="testRF02" id="s1-s1" pass="0" fail="1" skip="0">Software-Testing- Quiz02.testRF02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
